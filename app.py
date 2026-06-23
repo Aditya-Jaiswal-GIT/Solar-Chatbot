@@ -16,7 +16,13 @@ from dotenv import load_dotenv
 import os
 import time
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+pdf_path = os.path.join(
+    BASE_DIR,
+    "data",
+    "PM_Solar_Yojna.pdf"
+)
 
 load_dotenv()
 
@@ -305,7 +311,7 @@ def load_database():
 
     loader = PyPDFLoader(
 
-       "data/PM_Solar_Yojna.pdf"
+       pdf_path
 
     )
 
