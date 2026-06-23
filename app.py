@@ -305,7 +305,7 @@ def load_database():
 
     loader = PyPDFLoader(
 
-        r"C:\Users\Edin\Downloads\PM_Solar_Yojna.pdf"
+        'data\PM_Solar_Yojna.pdf'
 
     )
 
